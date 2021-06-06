@@ -5,6 +5,8 @@ This applies a simple exponential decay function to a sequence of media placemen
 
 The half-life (in days), length of period and number of additional periods to calculate are all adjustable.
 
+Dependencies:  ggplot2, scales (both from tidyverse)
+
 
 Some additional resources:
 

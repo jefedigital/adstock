@@ -51,7 +51,6 @@ period_labels <- as.numeric(row.names(adstock_table))
 
 ggplot(adstock_table) +
   geom_area(aes(x=period_labels, y=adstock), fill='green', alpha=.5, stat='identity') +
-  geom_text(aes(x=period_labels, y=adstock, label=round(as.numeric(adstock)/(10^6),1))) +
   geom_bar(aes(x=period_labels, y=media), fill='blue', stat='identity') +
   ggtitle('Media and Adstock Effect') + xlab('period') + ylab('effect') +
   scale_x_continuous(labels = period_labels, breaks=period_labels) +
