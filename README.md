@@ -7,7 +7,8 @@ The half-life (in days), length of period and number of additional periods to ca
 
 Dependencies:  ggplot2, scales (both from tidyverse)
 
+!(https://github.com/jefedigital/adstock/blob/main/output/adstock_effect.png)
 
-Some additional resources:
+### Additional Resources:
 
 [Advertising Adstock – Concept & Formula (Gabriel Mohanna)](https://analyticsartist.wordpress.com/2013/11/02/calculating-adstock-effect/)
