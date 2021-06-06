@@ -7,7 +7,7 @@ media <- read.csv('input/adstock_data.csv', header=F)$V1
 # manually set these three vars
 halflife_days <- 3 # estimated days for media to lose 50% effect
 period_days <- 1 # 7 == 1 week
-periods_addl <- 2 # additional periods to calculate after final media placement
+periods_addl <- 7 # additional periods to calculate after final media placement
 
 # more vars
 periods <- length(media)
