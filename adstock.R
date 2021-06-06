@@ -46,7 +46,7 @@ print(adstock)
 write.csv(adstock, file='adstock_totals.csv') # just totals
 write.csv(adstock_table, file='adstock_table.csv') # table
 
-# viz
+# viz .. not the prettiest
 period_labels <- as.numeric(row.names(adstock_table))
 
 ggplot(adstock_table) +
