@@ -2,9 +2,9 @@
 
 # get data: format is csv, single column of integer values for media placed in consecutive periods.
 # could be impressions, or views, or spend, etc.
-media <- read.csv('adstock_data.csv', header=F)$V1
+media <- read.csv('input/adstock_data.csv', header=F)$V1
 
-# manually set these vars
+# manually set these three vars
 halflife_days <- 3 # estimated days for media to lose 50% effect
 period_days <- 1 # 7 == 1 week
 periods_addl <- 2 # additional periods to calculate after final media placement
@@ -43,8 +43,8 @@ adstock_table <- data.frame(media, adstock)
 
 # output
 print(adstock)
-write.csv(adstock, file='adstock_totals.csv') # just totals
-write.csv(adstock_table, file='adstock_table.csv') # table
+write.csv(adstock, file='output/adstock_totals.csv') # just totals
+write.csv(adstock_table, file='output/adstock_table.csv') # table
 
 # viz .. not the prettiest
 period_labels <- as.numeric(row.names(adstock_table))
