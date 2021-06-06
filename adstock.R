@@ -45,6 +45,7 @@ adstock_table <- data.frame(media, adstock)
 print(adstock)
 write.csv(adstock, file='output/adstock_totals.csv') # just totals
 write.csv(adstock_table, file='output/adstock_table.csv') # table
+ggsave('output/adstock_effect.png')
 
 # viz .. not the prettiest
 period_labels <- as.numeric(row.names(adstock_table))
